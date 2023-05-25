@@ -1,21 +1,21 @@
 // ARRAY
-let ingredienti= ['Orecchiette casereccie', 'Salsa di pomodoro','Salsiccia di cavallo', 'Parmigiano reggiano DOP', 'Basilico']
+let ingredienti= ['Orecchiette casereccie', 'Salsa di pomodoro','Salsiccia di cavallo', 'Parmigiano reggiano DOP', 'Basilico','sale','olio','acqua']
 
 // VARIABILE CHE INDICA LA LISTA NEL DOM
-let listaSpesa = document.getElementById('shopping-ingredients')
+let listaSpesa = document.getElementById('shopping-list')
 
 // CICLO WHILE
-let ricetta = 0
+let i = 0
 
-while (ricetta < ingredienti.length) {
+while (i < ingredienti.length) {
     // VARIABILE CHE CONTIENE LA L'ARRAY NEL CICLO WHILE
-    let listItem = ingredienti[ricetta]
+    let listItem = ingredienti[i]
     // VARIABILE CHE INNIETTA NEL DOM GLI ELEMENTI "LI"
     listItem =  `<li>${listItem}</li> `
     // VARIABILE CHE INNIETTA NEL DOM GLI ELEMENTI "LI"
     listaSpesa.innerHTML += listItem
     // CHIUSURA DEL CICLO
-    ricetta++
+    i++
            
 }
 
